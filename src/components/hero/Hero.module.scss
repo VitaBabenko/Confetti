@@ -1,0 +1,46 @@
+.hero_wrapper {
+  width: 100%;
+  background-image: url("../../assets/background_mobile.png"),
+    url("../../assets//ballon1_mobile.png"),
+    url("../../assets//ballon2_mobile.png");
+  background-repeat: no-repeat;
+  background-position: center, bottom 79px right, top 64px left;
+}
+
+.container {
+  padding-top: 212px;
+  padding-bottom: 234px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: var(--menu-text-size);
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: var(--accent-primary-color);
+}
+
+.title_span {
+  color: var(--primary-color);
+}
