@@ -1,0 +1,43 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_logo {
+  width: 104px;
+  height: 28px;
+  z-index: 100;
+}
+
+.btn_menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: var(--menu-text-size);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.01px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+    transition: var(--animation-hover);
+    .icon_menu {
+      fill: var(--accent-primary-color);
+      stroke: var(--accent-primary-color);
+      transition: var(--animation-hover);
+    }
+  }
+}
+
+.icon_menu {
+  width: 24px;
+  height: 24px;
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
+}
