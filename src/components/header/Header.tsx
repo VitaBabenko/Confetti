@@ -1,11 +1,22 @@
 import { useState, useEffect } from "react";
 
+import { BurgerMenu } from "../burgerMenu";
+
 import sprite from "../../assets/sprite.svg";
 
 import styles from "./Header.module.scss";
 
 export const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const btnOpenModal = () => {
+    setIsOpen(true);
+  };
+
+  const btnCloseModal = () => {
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +36,11 @@ export const Header = () => {
       <div className={styles.container}>
         {scrolled ? (
           <div className={styles.container_scrolled}>
-            <button type="button" className={styles.btn_menu}>
+            <button
+              type="button"
+              onClick={btnOpenModal}
+              className={styles.btn_menu}
+            >
               <svg aria-label="icon menu" className={styles.icon_menu}>
                 <use href={`${sprite}#menu`}></use>
               </svg>
@@ -36,7 +51,11 @@ export const Header = () => {
             <svg aria-label="icon logo" className={styles.icon_logo}>
               <use href={`${sprite}#logo`}></use>
             </svg>
-            <button type="button" className={styles.btn_menu}>
+            <button
+              type="button"
+              onClick={btnOpenModal}
+              className={styles.btn_menu}
+            >
               menu
               <svg aria-label="icon menu" className={styles.icon_menu}>
                 <use href={`${sprite}#menu`}></use>
@@ -44,6 +63,7 @@ export const Header = () => {
             </button>
           </div>
         )}
+        {isOpen && <BurgerMenu btnModalClose={btnCloseModal} />}
       </div>
     </header>
   );
