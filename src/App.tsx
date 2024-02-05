@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 
-import { Header } from "./components/header";
-import { Hero } from "./components/hero";
-import { About } from "./components/about";
+import { Header, Hero, About } from "./components";
 
-// import styles from "./App.module.scss";
 import "./App.scss";
 
 function App() {
@@ -25,13 +21,13 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <>
       <Header />
       <main>
         <Hero />
         <About mobile={isMobile} />
       </main>
-    </Router>
+    </>
   );
 }
 

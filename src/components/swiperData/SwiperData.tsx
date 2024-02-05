@@ -1,22 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
+import { SwiperDataProps } from "../../types/SwiperData";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import styles from "./SwiperData.module.scss";
 
-type SwiperDataProps = {
-  dataSlides: {
-    id: number;
-    title: string;
-    description: string;
-    backgroundColor: string;
-  }[];
-};
-
-export const SwiperData = ({ dataSlides }: SwiperDataProps) => {
+export const SwiperData = ({ aboutCard }: SwiperDataProps) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -24,8 +17,8 @@ export const SwiperData = ({ dataSlides }: SwiperDataProps) => {
       slidesPerView={1}
       pagination={{ clickable: true }}
     >
-      {dataSlides &&
-        dataSlides.map(({ id, title, description, backgroundColor }) => {
+      {aboutCard &&
+        aboutCard.map(({ id, title, description, backgroundColor }) => {
           return (
             <SwiperSlide key={id}>
               <div style={{ backgroundColor }} className={styles.slide_wrap}>
