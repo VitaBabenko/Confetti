@@ -63,7 +63,9 @@ export const Header = () => {
             </button>
           </div>
         )}
-        {isOpen && <BurgerMenu btnModalClose={btnCloseModal} />}
+        {isOpen && (
+          <BurgerMenu isOpenModal={isOpen} btnModalClose={btnCloseModal} />
+        )}
       </div>
     </header>
   );
