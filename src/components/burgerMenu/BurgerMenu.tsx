@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
+import { BurgerMenuProps } from "../../types/BurgerMenu";
+
+import navBar from "../../data/navBar.json";
 
 import sprite from "../../assets/sprite.svg";
 
 import styles from "./BurgerMenu.module.scss";
-
-type BurgerMenuProps = {
-  btnModalClose: () => void;
-};
 
 export const BurgerMenu = ({ btnModalClose }: BurgerMenuProps) => {
   return (
@@ -23,18 +23,18 @@ export const BurgerMenu = ({ btnModalClose }: BurgerMenuProps) => {
             </svg>
           </button>
           <ul className={styles.list}>
-            <li>
-              <Link to="#hero" onClick={btnModalClose}>
-                główna
-              </Link>
-            </li>
-            <li>
-              <Link to="#about" onClick={btnModalClose}>
-                O nas
-              </Link>
-            </li>
-            <li>Recenzje</li>
-            <li>Kontakty</li>
+            {navBar.map(({ id, path, label }) => (
+              <li key={id}>
+                <Link
+                  to={path}
+                  smooth={true}
+                  duration={600}
+                  onClick={btnModalClose}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

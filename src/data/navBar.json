@@ -1,0 +1,6 @@
+[
+  { "id": 1, "path": "hero", "label": "główna" },
+  { "id": 2, "path": "about", "label": "O nas" },
+  { "id": 3, "path": "reviews", "label": "Recenzje" },
+  { "id": 4, "path": "contacts", "label": "Kontakty" }
+]

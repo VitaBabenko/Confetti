@@ -1,19 +1,12 @@
+import { GridCardsProps } from "../../types/AboutCard";
+
 import styles from "./GridCards.module.scss";
 
-type GridCardsProps = {
-  dataSlides: {
-    id: number;
-    title: string;
-    description: string;
-    backgroundColor: string;
-  }[];
-};
-
-export const GridCards = ({ dataSlides }: GridCardsProps) => {
+export const GridCards = ({ aboutCard }: GridCardsProps) => {
   return (
     <ul className={styles.list}>
-      {dataSlides &&
-        dataSlides.map(({ id, title, description, backgroundColor }) => {
+      {aboutCard &&
+        aboutCard.map(({ id, title, description, backgroundColor }) => {
           return (
             <li
               key={id}
