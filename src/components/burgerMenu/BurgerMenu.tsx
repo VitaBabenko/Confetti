@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import sprite from "../../assets/sprite.svg";
 
 import styles from "./BurgerMenu.module.scss";
@@ -21,8 +23,16 @@ export const BurgerMenu = ({ btnModalClose }: BurgerMenuProps) => {
             </svg>
           </button>
           <ul className={styles.list}>
-            <li>główna</li>
-            <li>O nas</li>
+            <li>
+              <Link to="#hero" onClick={btnModalClose}>
+                główna
+              </Link>
+            </li>
+            <li>
+              <Link to="#about" onClick={btnModalClose}>
+                O nas
+              </Link>
+            </li>
             <li>Recenzje</li>
             <li>Kontakty</li>
           </ul>
