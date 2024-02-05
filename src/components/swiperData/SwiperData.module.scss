@@ -1,0 +1,25 @@
+.slide_wrap {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  text-align: start;
+  gap: 35px;
+  padding: 24px;
+  width: 320px;
+  border-radius: 24px;
+  margin-bottom: 36px;
+  z-index: 999;
+}
+
+.slide_title {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: var(--deskription-text-size);
+  line-height: 28.8px;
+}
+
+.slide_desc {
+  color: var(--secondary-color);
+  font-size: var(--secondary-text-size);
+}

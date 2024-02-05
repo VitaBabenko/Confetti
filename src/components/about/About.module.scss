@@ -1,15 +1,12 @@
-.hero_wrapper {
+.about_wrapper {
   width: 100%;
   text-align: center;
-  background-image: url("../../assets/background_mobile.png"),
-    url("../../assets//ballon1_mobile.png"),
-    url("../../assets//ballon2_mobile.png");
-  background-repeat: no-repeat;
-  background-position: center, bottom 79px right, top 64px left;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
-  padding: 212px 20px 234px 20px;
+  padding-bottom: 80px;
   margin-right: auto;
   margin-left: auto;
 
@@ -31,13 +28,18 @@
 }
 
 .title {
-  text-align: center;
   font-size: var(--menu-text-size);
-  letter-spacing: -0.4px;
+  color: var(--primary-color);
   text-transform: uppercase;
-  color: var(--accent-primary-color);
+  margin-bottom: 16px;
 }
 
-.title_span {
-  color: var(--primary-color);
+.description {
+  font-size: var(--third-text-size);
+  color: var(--third-color);
+  margin-bottom: 36px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 }

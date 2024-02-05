@@ -1,0 +1,33 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.list_item {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  text-align: start;
+  gap: 40px;
+  padding: 48px;
+  width: 596px;
+  border-radius: 24px;
+}
+
+.list_title {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: var(--contact-text-size);
+  line-height: 28.8px;
+}
+
+.list_desc {
+  color: var(--secondary-color);
+  font-size: var(--deskription-text-size);
+}
