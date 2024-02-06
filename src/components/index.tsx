@@ -6,4 +6,4 @@ export { SwiperAbout } from "./swiperAbout";
 export { GridCards } from "./gridCards";
 export { Reviews } from "./reviews";
 export { SwiperReviews } from "./swiperReviews";
-// export {Footer} from './footer';
+export { Footer } from "./footer";
