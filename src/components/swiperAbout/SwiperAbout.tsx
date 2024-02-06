@@ -1,19 +1,19 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { SwiperDataProps } from "../../types/SwiperData";
+import { SwiperAboutProps } from "../../types/SwiperAbout";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import styles from "./SwiperData.module.scss";
+import styles from "./SwiperAbout.module.scss";
 
-export const SwiperData = ({ aboutCard }: SwiperDataProps) => {
+export const SwiperAbout = ({ aboutCard }: SwiperAboutProps) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={10}
+      spaceBetween={30}
       slidesPerView={1}
       pagination={{ clickable: true }}
     >

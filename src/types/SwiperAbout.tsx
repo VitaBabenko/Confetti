@@ -1,4 +1,4 @@
-export type SwiperDataProps = {
+export type SwiperAboutProps = {
   aboutCard: {
     id: number;
     title: string;

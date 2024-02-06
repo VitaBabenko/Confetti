@@ -38,10 +38,14 @@
   padding: 120px 147px;
   background-color: var(--secondary-color);
   height: 100%;
+}
 
-  //   @media screen and (min-width: 1920px) {
-  //     padding: 110px 70px 168px 70px;
-  //   }
+.icon_logo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 104px;
+  height: 28px;
 }
 
 .btn_close {

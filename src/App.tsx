@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { Header, Hero, About } from "./components";
+import { Header, Hero, About, Reviews } from "./components";
 
 import "./App.scss";
 
@@ -26,6 +26,7 @@ function App() {
       <main>
         <Hero />
         <About mobile={isMobile} />
+        <Reviews />
       </main>
     </>
   );

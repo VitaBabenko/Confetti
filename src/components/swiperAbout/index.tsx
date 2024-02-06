@@ -1,0 +1,1 @@
+export { SwiperAbout } from "./SwiperAbout";

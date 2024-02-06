@@ -1,4 +1,4 @@
-import { SwiperData } from "../swiperData";
+import { SwiperAbout } from "../swiperAbout";
 import { GridCards } from "../gridCards";
 
 import { AboutProps } from "../../types/About";
@@ -15,7 +15,7 @@ export const About = ({ mobile }: AboutProps) => {
         <h2 className={styles.title}>{about.title}</h2>
         <p className={styles.description}>{about.description}</p>
         {mobile ? (
-          <SwiperData aboutCard={aboutCard} />
+          <SwiperAbout aboutCard={aboutCard} />
         ) : (
           <GridCards aboutCard={aboutCard} />
         )}

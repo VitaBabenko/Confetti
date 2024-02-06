@@ -1,10 +1,11 @@
 .header_wrapper {
   position: fixed;
   width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .container {
-  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   margin-right: auto;
@@ -40,7 +41,6 @@
 .icon_logo {
   width: 104px;
   height: 28px;
-  z-index: 150;
 }
 
 .btn_menu {

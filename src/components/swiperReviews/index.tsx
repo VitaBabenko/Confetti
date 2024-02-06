@@ -1,0 +1,1 @@
+export { SwiperReviews } from "./SwiperReviews";

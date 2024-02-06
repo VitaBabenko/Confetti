@@ -31,6 +31,9 @@ export const BurgerMenu = ({ isOpenModal, btnModalClose }: BurgerMenuProps) => {
           <div className={styles.backdrop}>
             <div className={styles.modal}>
               <div className={styles.content}>
+                <svg aria-label="icon logo" className={styles.icon_logo}>
+                  <use href={`${sprite}#logo`}></use>
+                </svg>
                 <button
                   type="button"
                   onClick={btnModalClose}

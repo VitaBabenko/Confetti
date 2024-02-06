@@ -1,0 +1,40 @@
+.slide_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  height: 229px;
+  background-color: var(--background-primary-color);
+  border-radius: 24px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 346px;
+    height: 220px;
+  }
+}
+
+.slide_desc {
+  font-size: var(--third-text-size);
+  color: var(--third-color);
+}
+
+.user_wrap {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.icon_user {
+  width: 24px;
+  height: 24px;
+}
+
+.user_desc {
+  font-size: var(--secondary-text-size);
+  color: var(--third-color);
+}
