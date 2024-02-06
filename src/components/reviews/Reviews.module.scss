@@ -1,10 +1,6 @@
-.about_wrapper {
-  padding-top: 34px;
+.reviews_wrapper {
+  width: 100%;
   padding-bottom: 80px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 100px;
-  }
 }
 
 .container {
@@ -19,8 +15,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 86px;
-    padding-right: 86px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 768px;
   }
 
@@ -37,20 +33,5 @@
   font-size: var(--menu-text-size);
   color: var(--primary-color);
   text-transform: uppercase;
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 768px) {
-    font-size: var(--contact-text-size);
-  }
-}
-
-.description {
-  font-size: var(--third-text-size);
-  color: var(--third-color);
   margin-bottom: 36px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 48px;
-    font-size: var(--menu-text-size);
-  }
 }

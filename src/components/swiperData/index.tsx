@@ -1,1 +1,0 @@
-export { SwiperData } from "./SwiperData";
