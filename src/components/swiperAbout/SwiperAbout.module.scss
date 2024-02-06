@@ -13,23 +13,36 @@
   z-index: 999;
 
   @media screen and (min-width: 768px) {
-    max-width: 596px;
-  }
-
-  @media screen and (min-width: 768px) {
     width: 596px;
     height: 287px;
+    padding: 48px;
+  }
+
+  // @media screen and (min-width: 1280px) {
+  //   width: 300px;
+  //   // width: calc(100% / 2 - 300px);
+  //   // height: 500px;
+  //   padding: 1px;
+  // }
+
+  @media screen and (min-width: 1440px) {
+    width: 596px;
   }
 }
 
 .slide_title {
+  font-family: "Anzeigen Grotesk T", sans-serif;
   color: var(--secondary-color);
   text-transform: uppercase;
   font-size: var(--deskription-text-size);
   line-height: 28.8px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 10px;
+  }
 }
 
 .slide_desc {
   color: var(--secondary-color);
-  font-size: var(--secondary-text-size);
+  font-size: var(--deskription-text-size);
 }

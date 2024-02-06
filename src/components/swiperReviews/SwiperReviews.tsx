@@ -25,6 +25,10 @@ export const SwiperReviews = ({ reviews }: SwiperReviewsProps) => {
           slidesPerView: 2,
           spaceBetween: 16,
         },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 26,
+        },
       }}
     >
       {reviews &&

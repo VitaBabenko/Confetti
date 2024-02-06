@@ -5,6 +5,10 @@
   @media screen and (min-width: 768px) {
     padding-top: 100px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 78px;
+  }
 }
 
 .container {
@@ -26,6 +30,8 @@
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-left: 112px;
+    padding-right: 112px;
   }
 
   @media screen and (min-width: 1440px) {
@@ -33,19 +39,30 @@
   }
 }
 
+.title_wrap {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .title {
+  font-family: "Anzeigen Grotesk T", sans-serif;
   font-size: var(--menu-text-size);
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    font-size: var(--contact-text-size);
+    font-size: var(--primary-text-size);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--title-text-size);
   }
 }
 
 .description {
-  font-size: var(--third-text-size);
+  font-size: var(--deskription-text-size);
   color: var(--third-color);
   margin-bottom: 36px;
 

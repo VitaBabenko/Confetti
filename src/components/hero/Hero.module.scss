@@ -3,19 +3,35 @@
     url("../../assets//ballon1_mobile.png"),
     url("../../assets//ballon2_mobile.png");
   background-repeat: no-repeat;
-  background-position: center, bottom 79px right, top 64px left;
+  background-position: center, bottom 42px right, top 45px left;
 
   @media screen and (min-width: 768px) {
-    background-image: url("../../assets//background_tablet.png"),
+    background-image: url("../../assets/background_tablet.png"),
       url("../../assets/ballon_right_tablet.png"),
       url("../../assets/ballon_left_tablet.png");
-    background-position: center, bottom 79px right, top 64px left;
+    background-position: center, bottom -45px right, top 104px left;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("../../assets/background_desktop.png"),
+      url("../../assets/ballon_2_desktop.png"),
+      url("../../assets/ballon_1_desktop.png");
+    background-position: center, bottom 79px right 60px, top 134px left 50px;
+    background-size: cover, 400px, 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url("../../assets/background_desktop.png"),
+      url("../../assets/ballon_2_desktop.png"),
+      url("../../assets/ballon_1_desktop.png");
+    background-position: center, bottom 79px right 300px, top 174px left 280px;
+    background-size: cover, 400px, 400px;
   }
 }
 
 .container {
   text-align: center;
-  padding: 182px 20px 200px 20px;
+  padding: 212px 20px 200px 20px;
   margin-right: auto;
   margin-left: auto;
 
@@ -25,19 +41,22 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 247px 157px 227px 157px;
+    padding: 247px 130px 227px 130px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding: 264px 310px 264px 310px;
   }
 
   @media screen and (min-width: 1440px) {
+    padding: 286px 350px 264px 350px;
     width: 1440px;
   }
 }
 
 .title {
+  font-family: "Anzeigen Grotesk T", sans-serif;
   text-align: center;
   font-size: var(--menu-text-size);
   letter-spacing: -0.4px;
@@ -45,7 +64,15 @@
   color: var(--accent-primary-color);
 
   @media screen and (min-width: 768px) {
-    font-size: var(--primary-text-size);
+    font-size: var(--title-text-size);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--desc-tablet-text-size);
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: var(--desc-decktop-text-size);
   }
 }
 
