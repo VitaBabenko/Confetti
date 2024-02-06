@@ -35,9 +35,17 @@
 }
 
 .content {
-  padding: 120px 147px;
+  padding: 120px 140px;
   background-color: var(--secondary-color);
   height: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding: 138px 315px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 165px 530px;
+  }
 }
 
 .icon_logo {
@@ -46,6 +54,16 @@
   left: 20px;
   width: 104px;
   height: 28px;
+
+  @media screen and (min-width: 768px) {
+    top: 32px;
+    left: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 37px;
+    left: 112px;
+  }
 }
 
 .btn_close {
@@ -65,6 +83,16 @@
       transition: var(--animation-hover);
     }
   }
+
+  @media screen and (min-width: 768px) {
+    top: 34px;
+    right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 39px;
+    right: 112px;
+  }
 }
 
 .icon_close {
@@ -82,14 +110,24 @@
 }
 
 .list_item {
+  font-family: "Anzeigen Grotesk T", sans-serif;
   text-transform: uppercase;
   font-size: var(--menu-text-size);
   color: var(--primary-color);
+  font-weight: 700;
 
   &:hover,
   &:focus {
     color: var(--accent-primary-color);
     transition: var(--animation-hover);
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: var(--primary-text-size);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--title-text-size);
   }
 }

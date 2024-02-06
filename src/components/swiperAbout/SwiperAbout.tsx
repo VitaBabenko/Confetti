@@ -13,9 +13,16 @@ export const SwiperAbout = ({ aboutCard }: SwiperAboutProps) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={30}
       slidesPerView={1}
       pagination={{ clickable: true }}
+      breakpoints={{
+        0: {
+          spaceBetween: 30,
+        },
+        1280: {
+          spaceBetween: 24,
+        },
+      }}
     >
       {aboutCard &&
         aboutCard.map(({ id, title, description, backgroundColor }) => {
