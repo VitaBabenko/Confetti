@@ -12,10 +12,8 @@ export const About = ({ mobile }: AboutProps) => {
   return (
     <section id="about" className={styles.about_wrapper}>
       <div className={styles.container}>
-        <div className={styles.title_wrap}>
-          <h2 className={styles.title}>{about.title}</h2>
-          <p className={styles.description}>{about.description}</p>
-        </div>
+        <h2 className={styles.title}>{about.title}</h2>
+        <p className={styles.description}>{about.description}</p>
         {mobile ? (
           <SwiperAbout aboutCard={aboutCard} />
         ) : (

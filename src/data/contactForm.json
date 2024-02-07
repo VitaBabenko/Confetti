@@ -1,0 +1,29 @@
+{
+  "name": {
+    "name": "name",
+    "label": "Imię",
+    "placeholder": "Imię",
+    "pattern": {
+      "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-))[A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż -]+$",
+      "message": "Nieprawidłowe Іmię"
+    }
+  },
+  "email": {
+    "name": "email",
+    "label": "E-mail",
+    "placeholder": "mail@gmail.com",
+    "pattern": {
+      "value": "^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*\\.[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})?$",
+      "message": "Nieprawidłowy email"
+    }
+  },
+  "message": {
+    "name": "message",
+    "label": "Wiadomość",
+    "placeholder": "Twoja wiadomość..."
+  },
+  "btn": {
+    "label": "Wyślij"
+  },
+  "required": true
+}

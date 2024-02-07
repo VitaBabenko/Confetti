@@ -39,24 +39,23 @@
   }
 }
 
-.title_wrap {
-  max-width: 700px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .title {
   font-family: "Anzeigen Grotesk T", sans-serif;
   font-size: var(--menu-text-size);
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 
   @media screen and (min-width: 768px) {
     font-size: var(--primary-text-size);
+    width: 584px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 700px;
     font-size: var(--title-text-size);
   }
 }
@@ -65,9 +64,17 @@
   font-size: var(--deskription-text-size);
   color: var(--third-color);
   margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 48px;
+    width: 584px;
     font-size: var(--menu-text-size);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 700px;
   }
 }

@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 
 import { Header, Hero, About, Reviews, Contacts, Footer } from "./components";
 
-import "./App.scss";
-
-function App() {
+export const App = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -32,6 +30,4 @@ function App() {
       <Footer />
     </>
   );
-}
-
-export default App;
+};

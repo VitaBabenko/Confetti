@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
 import styles from "./SwiperReviews.module.scss";
 
 export const SwiperReviews = ({ reviews }: SwiperReviewsProps) => {
