@@ -9,29 +9,47 @@
 
 .container {
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 80px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
     width: 768px;
+    padding-top: 80px;
   }
 
   @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    // padding-top: 150px;
+    // justify-content: space-between;
     padding-left: 112px;
-    padding-right: 112px;
+    padding-right: 5px;
     width: 1280px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 1440px;
+  }
+}
+
+.container_contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    text-align: start;
+    padding: 0;
   }
 }
 
@@ -48,7 +66,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: var(--title-text-size);
+    font-size: var(--desc-decktop-text-size);
   }
 }
 
@@ -58,4 +76,33 @@
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
+
+.form_wrapper {
+  padding-top: 36px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 88px;
+    background-image: url("../../assets/ballon_contact_1.png"),
+      url("../../assets/ballon_contact_2.png");
+    background-repeat: no-repeat;
+    background-position: top -37px left -40px, bottom 30px right -25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 120px 112px 0 130px;
+    background-image: url("../../assets/ballon_contact_1.png"),
+      url("../../assets/ballon_contact_2.png");
+    background-position: top -55x left, bottom 70px right -160px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 120px 112px 0 280px;
+    background-image: url("../../assets/ballon_contact_1.png"),
+      url("../../assets/ballon_contact_2.png");
+    background-position: top -20px left 100px, bottom 10px right -10px;
+  }
 }

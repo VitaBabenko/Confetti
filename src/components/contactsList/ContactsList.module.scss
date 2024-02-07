@@ -3,11 +3,10 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  margin-bottom: 36px;
   list-style: none;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 88px;
+  @media screen and (min-width: 1280px) {
+    align-items: start;
   }
 }
 
