@@ -1,4 +1,4 @@
-import { SwiperReviews } from "../swiperReviews";
+import { SwiperReviews } from "../../components/swiperReviews";
 
 import reviews from "../../data/reviews.json";
 

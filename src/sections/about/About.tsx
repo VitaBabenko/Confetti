@@ -1,5 +1,5 @@
-import { SwiperAbout } from "../swiperAbout";
-import { GridCards } from "../gridCards";
+import { SwiperAbout } from "../../components/swiperAbout";
+import { GridCards } from "../../components/gridCards";
 
 import { AboutProps } from "../../types/About";
 

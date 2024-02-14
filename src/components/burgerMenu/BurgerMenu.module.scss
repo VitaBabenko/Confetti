@@ -54,6 +54,11 @@
   left: 20px;
   width: 104px;
   height: 28px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid var(--accent-primary-color);
+  }
 
   @media screen and (min-width: 768px) {
     top: 32px;
