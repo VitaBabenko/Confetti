@@ -24,6 +24,22 @@ export const BurgerMenu = ({ isOpenModal, btnModalClose }: BurgerMenuProps) => {
     };
   }, [isOpenModal]);
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        btnModalClose();
+      }
+    };
+
+    if (isOpenModal) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpenModal, btnModalClose]);
+
   return (
     <>
       {burgerRoot !== null &&
@@ -31,9 +47,16 @@ export const BurgerMenu = ({ isOpenModal, btnModalClose }: BurgerMenuProps) => {
           <div className={styles.backdrop}>
             <div className={styles.modal}>
               <div className={styles.content}>
-                <svg aria-label="icon logo" className={styles.icon_logo}>
-                  <use href={`${sprite}#logo`}></use>
-                </svg>
+                <Link
+                  to="hero"
+                  smooth={true}
+                  duration={600}
+                  onClick={btnModalClose}
+                >
+                  <svg aria-label="icon logo" className={styles.icon_logo}>
+                    <use href={`${sprite}#logo`}></use>
+                  </svg>
+                </Link>
                 <button
                   type="button"
                   onClick={btnModalClose}

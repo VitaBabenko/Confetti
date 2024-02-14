@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-import { Header, Hero, About, Reviews, Contacts, Footer } from "./components";
+import { Hero, About, Reviews, Contacts } from "./sections";
+import { Header, Footer } from "./components";
 
 export const App = () => {
   const [isMobile, setIsMobile] = useState(false);

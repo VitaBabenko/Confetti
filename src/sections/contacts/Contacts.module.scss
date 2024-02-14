@@ -106,3 +106,40 @@
     background-position: top -20px left 100px, bottom 10px right -10px;
   }
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  list-style: none;
+
+  @media screen and (min-width: 1280px) {
+    align-items: start;
+  }
+}
+
+.link {
+  display: flex;
+  gap: 8px;
+  text-decoration: none;
+  font-size: var(--deskription-text-size);
+  color: var(--third-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary-color);
+    transition: var(--animation-hover);
+
+    .list_icon {
+      stroke: var(--accent-primary-color);
+      transition: var(--animation-hover);
+    }
+  }
+}
+
+.list_icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--primary-color);
+}

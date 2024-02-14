@@ -1,6 +1,7 @@
 export { Header } from "./header";
-export { Hero } from "./hero";
-export { About } from "./about";
-export { Reviews } from "./reviews";
-export { Contacts } from "./contacts";
+export { BurgerMenu } from "./burgerMenu";
+export { SwiperAbout } from "./swiperAbout";
+export { GridCards } from "./gridCards";
+export { SwiperReviews } from "./swiperReviews";
+export { ContactForm } from "./contactForm";
 export { Footer } from "./footer";

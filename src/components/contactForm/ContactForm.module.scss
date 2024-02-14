@@ -30,6 +30,23 @@
   border: 1px solid var(--from-input-color);
   color: var(--primary-color);
   font-size: var(--deskription-text-size);
+  margin-bottom: 32px;
+
+  &::placeholder {
+    font-size: var(--third-text-size);
+    color: var(--form-placeholder);
+  }
+}
+
+.form_input_error {
+  width: 100%;
+  max-width: 443px;
+  height: 62px;
+  padding: 20px 24px;
+  border-radius: 9px;
+  border: 1px solid var(--from-input-color);
+  color: var(--primary-color);
+  font-size: var(--deskription-text-size);
   margin-bottom: 8px;
 
   &::placeholder {

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 import { BurgerMenu } from "../burgerMenu";
 
@@ -32,7 +33,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className={styles.header_wrapper}>
+    <header id="header" className={styles.header_wrapper}>
       <div className={styles.container}>
         {scrolled ? (
           <div className={styles.container_scrolled}>
@@ -48,9 +49,11 @@ export const Header = () => {
           </div>
         ) : (
           <div className={styles.container_noscrolled}>
-            <svg aria-label="icon logo" className={styles.icon_logo}>
-              <use href={`${sprite}#logo`}></use>
-            </svg>
+            <Link to="hero" smooth={true} duration={600}>
+              <svg aria-label="icon logo" className={styles.icon_logo}>
+                <use href={`${sprite}#logo`}></use>
+              </svg>
+            </Link>
             <button
               type="button"
               onClick={btnOpenModal}
